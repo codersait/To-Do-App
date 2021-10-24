@@ -130,4 +130,9 @@ span:hover {
   .footer {
     gap: 1rem;
   }
+  form > input,
+  .search > input,
+  .todo {
+    font-size: 1rem;
+  }
 }
