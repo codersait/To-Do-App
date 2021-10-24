@@ -83,6 +83,10 @@ ul {
 
 .delete {
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.delete:hover {
+  transform: rotate(90deg);
 }
 .hide {
   display: none;
@@ -109,4 +113,21 @@ span {
 span:hover {
   background: purple;
   color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .container {
+    margin-top: 0;
+  }
+  .todo {
+    width: 80vw;
+  }
+  .footer {
+    gap: 1rem;
+  }
 }
